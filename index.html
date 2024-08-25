@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicken Catcher</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="musica-fundo" src="sounds/y2mate.com - Carefree.mp3" autoplay loop></audio>
+    <div id="seletor-dificuldade">
+        <label for="dificuldade">Dificuldade:</label>
+        <select id="dificuldade">
+            <option value="really?">'-'</option>
+            <option value="facil">Noob</option>
+            <option value="medio" selected>Normal</option>
+            <option value="dificil">Difícil</option>
+            <option value="deus">Deus</option>
+        </select>
+        <button id="toggle-music">
+            <img id="music-icon" src="imgs/music-on.png" alt="Música Ligada">
+        </button>
+    </div>    
+    <div id="tela-do-jogo">
+        <img src="imgs/frango.png" id="galinha">
+        <img src="imgs/brocolis.png" id="brocolis" style="display: none;">
+    </div>
+    <div id="containerstats">
+        <p id="pontos">Pontuação: 0</p>
+        <p id="recorde">Recorde: 0</p>
+        <p id="tempo">Tempo: 30s</p>
+    </div>
+    <audio id="yamyam" src="sounds/namnamnam.mp3"></audio>
+    <audio id="burp" src="sounds/burp.mp3"></audio>
+
+    <div id="modal" style="display: none;">
+        <div id="modal-content">
+            <p>Cabo o jogo meu fi, cê garfou <span id="pontuacao-final"></span> frango(s).</p>
+            <button id="reiniciar">Jogar Novamente</button>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+

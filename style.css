@@ -1,0 +1,114 @@
+html {
+    font-family: 'Comic Sans MS', 'Comic Sans';
+    background-image: url('imgs/background.png');
+    font-size: 30px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#tela-do-jogo {
+    display: flex;
+    width: 750px;
+    height: 600px;
+    background-color: #ffffff;
+    border: 0.2px solid #8f8f8f;
+    border-radius: 75px;
+    box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.55);
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    cursor: url(imgs/garfo.png), auto;
+}
+
+img {
+    cursor: url(imgs/garfoarrebatado.png), auto;
+}
+
+#music-icon{
+    cursor: pointer;
+}
+
+p{
+    text-align: center;
+    margin: 1px;
+}
+
+#containerstats {
+    margin: 50px 0;
+    background-color: #ffffff;
+    border: 0.2px solid #8f8f8f;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.55);
+}
+
+#seletor-dificuldade {
+    margin: 10px 0;
+    background-color: #ffffff;
+    border: 0.2px solid #8f8f8f;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.55);
+}
+
+select {
+    font-size: 30px;
+}
+
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#modal-content {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#reiniciar {
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+#reiniciar:hover {
+    background-color: #45a049;
+}
+
+#toggle-music {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#toggle-music img {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+
